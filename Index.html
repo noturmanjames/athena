@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CBC</title>
+	<style type="text/css">
+	*{
+		text-decoration: none;
+	 }
+	.navbar{
+		background: aquamarine;
+		font-family: cursive;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.navdiv{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.logo a{
+		
+		font-size: 35px;
+		color: whitesmoke;
+		font-weight: 600;
+	}
+	li{
+		list-style: none;
+		display: inline-block;
+	}
+	li a{
+		color: white;
+		font-size: 18px;
+	    font-weight: bold;
+	    margin-right: 25px;
+
+	}
+	body{
+		background-image: url('Athena1.PNG');
+		background-repeat: no-repeat;
+		background-size:cover;
+	}
+	button{
+		border-radius: 15px;
+		width: 90px;
+		background: black;
+		padding: 10px;
+	}
+	button a{
+		color: white;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	p{
+		color: white;
+		font-size:28px ;
+		font-weight: bold;
+	}
+	.wrapper{
+		position: relative;
+		width: 700px;
+		backdrop-filter: blur(25px);
+		height: 450px;
+		border-radius: 2px;
+	}
+	.container{
+	  overflow: hidden;
+	  backdrop-filter: blur(25px);
+	  width:450px ;
+	  height: 450px;
+	  border-radius: 15px;
+	  box-shadow:2px 2px 5px black ;
+	  position: sticky;
+	  animation: appear  linear;
+	  animation-timeline:view();
+	  animation-range:entry 0 cover 40%;
+
+	}
+	.holder{
+	width: 100%;
+	display: flex;
+	animation: slide 10s infinite;
+
+	}
+	@keyframes slide{
+		0%{
+			transform: translateX(0);
+		}
+		25%{
+			transform: translateX(0);
+		}
+		30%{
+			transform: translateX(-100%);
+		}
+		50%{
+			transform: translateX(-100%);
+		}
+		55%{
+			transform: translateX(-200%);
+		}
+		60%{
+			transform: translateX(-200%);
+		}
+		70%{
+			transform: translateX(-300%);
+		}
+		75%{
+			transform: translateX(-300%);
+		}
+		80%{
+			transform: translateX(-400%);
+		}
+		100%{
+			transform: translateX(-400%);
+		}
+
+
+	}
+	@keyframes appear{
+		from{
+			opacity: 0;
+			scale: 0.5;
+		}
+		to{
+			opacity: 1;
+			scale: 1;
+		}
+	}
+	img{
+		width:100%;
+		height: 500px;
+	}
+	.kwanza{
+		overflow: hidden;
+		width: 300px;
+		border: white 10px solid;
+		border-radius: 25px;
+	}
+</style>
+</head>
+<body>
+<nav class="navbar">
+	<div class="navdiv">
+		<div class="logo">
+		<a href="#">ATHENA</a>
+		</div>
+		<ul>
+			<li><a href="Notes.html">Notes</a></li>
+			<li><a href="Questions.html">Questions</a></li>
+			<li><a href="Contacts.html">Contacts</a></li>
+			<button><a href="signin.html">Sign in</a></button>
+			<button><a href="signup">sign up</a></button>
+			</ul>
+		</div>
+</nav>
+<div class="kwanza">
+	<div class="holder">
+		<img src="history.JPG">
+		<img src="heart.JPG">
+		<img src="chem.JPG">
+		<img src="phyc.JPG">
+		<img src="Biology.JPG">
+	</div>
+</div>
+<div class="container" style="left: 70%;">
+<p>Highschooler notes
+	<a href="highschool.html">Notes clich kere</a>
+</p>
+</div>
+<div class="container">
+</div>
+</body>
+</html>
